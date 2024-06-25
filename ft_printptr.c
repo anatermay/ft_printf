@@ -6,7 +6,7 @@
 /*   By: aternero <aternero@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/27 13:26:21 by aternero          #+#    #+#             */
-/*   Updated: 2024/06/13 21:16:36 by aternero         ###   ########.fr       */
+/*   Updated: 2024/06/25 21:27:11 by aternero         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ int	ft_printhex(uintptr_t ptr)
 	if (ptr >= 16)
 	{
 		value = value + ft_printhex(ptr / 16);
-        write(1, &hex[ptr % 16], 1);
+		write(1, &hex[ptr % 16], 1);
 		value = value + 1;
 	}
 	else

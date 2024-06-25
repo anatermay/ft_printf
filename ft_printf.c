@@ -6,7 +6,7 @@
 /*   By: aternero <aternero@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/27 11:59:23 by aternero          #+#    #+#             */
-/*   Updated: 2024/06/13 20:23:35 by aternero         ###   ########.fr       */
+/*   Updated: 2024/06/25 21:25:03 by aternero         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 int	ft_typeformat(const char *format, int index, va_list arg)
 {
 	int		value;
-	char 	percent;
+	char	percent;
 
 	value = 0;
 	percent = '%';
@@ -43,9 +43,9 @@ int	ft_typeformat(const char *format, int index, va_list arg)
 
 int	ft_printf(const char *format, ...)
 {
-	va_list	arg;
-	int		index;
-	int		value;
+	va_list		arg;
+	int			index;
+	int			value;
 
 	index = 0;
 	value = 0;
